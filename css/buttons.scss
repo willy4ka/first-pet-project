@@ -1,0 +1,26 @@
+.btn {
+	margin: 0 auto;
+	background-color: var(--primary);
+	color: var(--secondary);
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 0px var(--primary);
+	font-weight: 700;
+}
+
+.btn:active {
+	position: relative;
+	top: 2px;
+	background-color: rgb(7, 7, 7);
+	box-shadow: unset;
+}
+
+.btn-pass,
+.btn-copy {
+	font-size: 22px;
+}
+
+.password {
+	border: 2px solid var(--primary);
+	padding: 20px;
+}

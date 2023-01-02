@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="./img/icons/willy.ico">
+	<title>PORTFOLIO</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<h1 class="header__title">
+					<span class="modal-letter">W</span>EB-DEV EXPERIENCE
+				</h1>
+				<div class="popup">
+					<img src="./img/stich.jpg" alt="">
+					<h1>Ohana means Family</h1>
+					<button type="button"><img class="close-modal icon" src="./img/icons/cross.svg" alt=""></button>
+				</div>
+				<div class="overlay"></div>
+				<div class="timer">
+					<h2 class="timer__title">Осталось до начала лета: &darr;</h2>
+					<div class="timer__wrapper">
+						<div class="timer__block">
+							<span id="days">12</span>
+							дней
+						</div>
+						<div class="timer__block">
+							<span id="hours">20</span>
+							часов
+						</div>
+						<div class="timer__block">
+							<span id="minutes">56</span>
+							минут
+						</div>
+						<div class="timer__block">
+							<span id="seconds">20</span>
+							секунд
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="content">
+		<div class="container">
+			<!-- TABS -->
+			<section class="tabcontainer">
+				<div class="tabheader">
+					<div class="tabheader__wrapper">
+						<h3>Практика JS:</h3>
+						<div class="tabheader__items">
+							<div class="tabheader__item tabheader__item--active">1</div>
+							<div class="tabheader__item">2</div>
+							<div class="tabheader__item">3</div>
+							<div class="tabheader__item">4</div>
+							<div class="tabheader__item">5</div>
+						</div>
+					</div>
+				</div>
+				<div class="tabcontent hide">
+					<h2 class="background">Background: &nbsp;<span class="color">COLOR</span></h2>
+					<button id="btn-bg" class="btn">Сменить цвет этой фигни сверху</button>
+					<input class="custom-checkbox" type="checkbox" id="together" checked>
+					<label for="together">Менять вместе с шапкой</label>
+				</div>
+				<div class="tabcontent hide">
+					<div class="random-cat">
+						<h2>Cats API</h2>
+						<button class="btn random-cat__btn" type="button">RANDOM CAT</button>
+						<div class="random-cat__card">
+							<img src="img/stich.jpg" alt="Не удалось загрузить изображение">
+						</div>
+					</div>
+				</div>
+
+				<div class="tabcontent hide">
+					<div>
+						<input class="password" value="Password Generator"></input>
+					</div>
+					<button class="btn btn-pass">Сгенерировать пароль</button>
+					<button class="btn btn-copy">Скопировать</button>
+				</div>
+				<div class="tabcontent hide tasks">
+					<h1 class="tasks__title">UNIVERSAL LIST</h1>
+
+					<ul class="tasks__list">
+
+					</ul>
+					<input class="tasks__input" type="text" placeholder="Введите задачу">
+					<button class="btn tasks__btn" type="button">Добавить задачу</button>
+				</div>
+				<div class="tabcontent board-bg">
+					<div>Нажимай на квадратик, чтобы закрепить цвет</div>
+					<div class="board" id="board"></div>
+				</div>
+			</section>
+			<!-- // TABS -->
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__title">
+				&#169; WILLY4KA
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+	<script src="./js/tabs.js"></script>
+	<script src="./js/timer.js"></script>
+	<script src="./js/modal.js"></script>
+	<script src="./js/background.js"></script>
+	<script src="./js/random-cat.js"></script>
+	<script src="./js/password.js"></script>
+	<script src="./js/list.js"></script>
+	<script src="./js/game-cube.js"></script>
+	<script src="./js/game-aim.js"></script>
+</body>
+
+</html>

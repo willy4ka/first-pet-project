@@ -1,0 +1,58 @@
+.random-cat {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+}
+
+.random-cat h2 {
+	margin-bottom: 30px;
+}
+
+.random-cat__card {
+	height: 100%;
+	width: 100%;
+	padding: 16px;
+	background: #dddddd;
+	box-shadow: 5px 5px 15px #696969;
+	border-radius: 10px;
+	position: relative;
+}
+
+.random-cat__card img.loading {
+	background-color: #ddd;
+	z-index: 10;
+	transition: all 2s ease;
+	visibility: visible;
+	opacity: 0.2;
+}
+
+.loading {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.loader {
+	border: 16px solid #f3f3f3;
+	/* Light grey */
+	border-top: 16px solid #000000;
+	/* Blue */
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 2s linear infinite;
+
+	position: absolute;
+	top: 40%;
+	left: 50%;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

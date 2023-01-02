@@ -1,0 +1,28 @@
+ .board {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-wrap: wrap;
+	 min-width: 100%;
+	 min-height: 100%;
+ }
+ 
+ .square {
+	 width: 30px;
+	 height: 30px;
+	 background: #fff;
+	 margin: 2px;
+	 box-shadow: 0 0 2px #000;
+	 transition: 2s ease;
+	 cursor: pointer;
+ }
+
+ .square:hover {
+	 transition-duration: 0s;
+ }
+
+ .square:active {
+	position: relative;
+	top: 2px;
+ }
+ 

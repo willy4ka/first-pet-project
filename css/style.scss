@@ -1,0 +1,180 @@
+@import "reset.scss";
+@import "buttons.scss";
+@import "tabs.scss";
+@import "background.scss";
+@import "random-cat.scss";
+@import "list.scss";
+@import "game-cube.scss";
+
+:root {
+	--container-width: 1570px;
+	--container-padding: 15px;
+	--primary: #0E0606;
+	--secondary: #fff;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--primary);
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: -30px;
+	bottom: 0;
+	overflow-y: scroll;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: var(--container-width);
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+}
+
+.hide {
+	display: none !important;
+}
+
+.content {
+	min-height: 100vh;
+}
+
+.title {
+	font-size: 2em;
+	color: var(--secondary);
+}
+
+// HEADER _________________
+.header {
+	color: var(--secondary);
+	font-weight: 700;
+	background-color: var(--primary);
+	padding: 20px;
+	box-shadow: 0px 5px 10px rgb(0, 0, 0);
+	margin-bottom: 30px;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__title {
+	font-size: 40px;
+
+	span {
+		text-decoration: underline;
+	}
+}
+
+// FOOTER_________________
+.footer {
+	color: var(--secondary);
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: auto;
+	background-color: var(--primary);
+	padding: 10px;
+	box-shadow: 0px -5px 10px rgb(0, 0, 0);
+	margin-top: 100px;
+}
+
+// TIMER _________________
+.timer {
+	font-size: 20px;
+	color: var(--secondary);
+
+
+	.timer__title {
+		font-size: 28px;
+		text-align: right;
+	}
+
+	.timer__wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+
+		.timer__block {
+			span {
+				font-size: 28px;
+			}
+		}
+	}
+}
+
+// MODAL WINDOW _________________
+
+.modal-letter {
+	cursor: pointer;
+	position: relative;
+}
+
+.modal-letter::after {
+	content: 'модалка';
+	text-decoration: none;
+	position: absolute;
+	font-size: 10px;
+	bottom: -4px;
+	right: 0;
+
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+	transition: all 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+
+	&.open {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.popup {
+	z-index: 11;
+	position: fixed;
+	top: 150px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0 15px;
+	max-width: 700px;
+	width: calc(50% - 16px);
+	max-height: 90vh;
+	padding: 80px 40px;
+	background-color: white;
+	transition: all 0.5s ease;
+	opacity: 0;
+	visibility: hidden;
+
+	&.open {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.close-modal {
+	position: fixed;
+	width: 35px;
+	top: 5px;
+	right: 5px;
+}
+
+.close-modal:active {
+	top: 7px;
+}

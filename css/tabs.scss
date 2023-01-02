@@ -1,0 +1,40 @@
+// TABS_________________
+.tabcontainer {
+	text-align: center;
+	font-size: 36px;
+}
+
+.tabheader {
+	margin-bottom: 50px;
+}
+
+.tabheader__wrapper {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	div {
+		cursor: pointer;
+	}
+}
+
+.tabheader__items {
+	display: flex;
+	gap: 30px;
+
+	.tabheader__item {
+		padding: 10px 25px;
+		background-color: rgba(184, 184, 184, 0.1);
+		font-size: 48px;
+		font-weight: 400;
+	}
+}
+
+.tabheader__item--active {
+	text-decoration: underline;
+	background-color: rgba(184, 184, 184, 0.3) !important;
+	font-weight: 700 !important;
+}
+
+.tabcontent {
+	display: none;
+}
